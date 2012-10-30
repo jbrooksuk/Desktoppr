@@ -1,0 +1,21 @@
+//
+// Prefix header for all source files of the 'Desktoppr' target in the 'Desktoppr' project
+//
+
+#import <Availability.h>
+
+#ifndef __IPHONE_5_0
+#warning "This project uses features only available in iOS SDK 5.0 and later."
+#endif
+
+#ifdef __OBJC__
+
+#import <UIKit/UIKit.h>
+#import <Foundation/Foundation.h>
+#import <CoreData/CoreData.h>
+
+#import "JBAppDelegate.h"
+
+#define AppDelegate ((JBAppDelegate *)[[UIApplication sharedApplication] delegate])
+
+#endif
